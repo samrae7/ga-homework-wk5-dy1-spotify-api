@@ -10,8 +10,11 @@ var searchString;
 
 var searchType;
 
+var searchButton = $('#search');
+
 selectCriteria.on('change',getResults);
 searchBox.on('change', getSearchString);
+searchButton.on('click',getResults);
 
 function getSearchString() {
   searchString = searchBox.val().toLowerCase();
