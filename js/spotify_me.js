@@ -38,11 +38,14 @@ function getResults() {
 
   console.log(items);
 
+
+
   $.each(items, function(index, item) {
     console.log(items[index]['name']);
 
     $('#results').append("<p>"+items[index]['name']+"</p>")
-  })
+    })
+  // debugger;
   // $.each(response[searchType+'s']['items'];
 
   })
